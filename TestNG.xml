@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="TestNGDemoProject1">
+
+<listeners>
+<listener class-name="com.TestNGDemo1.reports.Reporting"/>
+</listeners>
+<test name=" Ecommerce Application Test ">
+
+        <parameter name="browser" value="chrome" /> 
+         <!-- <parameter name="browser" value="firefox" /> -->  
+          <!-- <parameter name="browser" value="ie" /> -->
+          
+     
+		<classes>
+			
+		 
+		 <class name="com.TestNGDemo1.testCases.TC_RegistrationTest_001"/>
+		   <class name="com.TestNGDemo1.testCases.TC_LoginTest_002"/>
+		 <!-- <class name="com.TestNGDemo1.testCases.TC_LoginTestDDT_003"/>-->
+		  
+		 	<class name="com.TestNGDemo1.testCases.TC_ProductSearchTest_004"/>
+		 	
+		 	<class name="com.TestNGDemo1.testCases.TC_AddToCartTest_005"/>
+		 	<!--<class name="com.TestNGDemo1.testCases.TC_RegistrationTestDDT_006"/>-->
+		 <class name="com.TestNGDemo1.testCases.TC_PlaceAnOrderTest_007"/>
+		 	
+		 	
+		 		      		    	
+		</classes>
+</test>
+	
+</suite>

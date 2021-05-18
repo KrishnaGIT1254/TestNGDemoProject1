@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [TestNGDemoProject1]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.TestNGDemo1.reports.Reporting"/>
+  </listeners>
+  <test thread-count="5" name=" Ecommerce Application Test (failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.TestNGDemo1.testCases.TC_RegistrationTest_001">
+        <methods>
+          <include name="registrationTest"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.TestNGDemo1.testCases.TC_RegistrationTest_001 -->
+      <class name="com.TestNGDemo1.testCases.TC_ProductSearchTest_004">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="productSearchTest"/>
+        </methods>
+      </class> <!-- com.TestNGDemo1.testCases.TC_ProductSearchTest_004 -->
+    </classes>
+  </test> <!--  Ecommerce Application Test (failed) -->
+</suite> <!-- Failed suite [TestNGDemoProject1] -->
